@@ -6,3 +6,4 @@ export { default as Panorama2 } from "./img/Panorama2.png";
 export { default as DisplayDate } from "./svg/DisplayDate";
 export { default as DisplayDate2 } from "./svg/DisplayDate_2";
 export { default as VectorGradation } from "./svg/VectorGradation";
+export { default as GSMGraduationExhibition } from "./svg/GSMGraduationExhibition";
