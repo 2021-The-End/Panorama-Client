@@ -143,7 +143,7 @@ export const SecondDate = styled.div`
   position: absolute;
   left: 156px;
   top: 123px;
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1900px) {
     left: 111px;
     top: 100px;
   }
@@ -179,7 +179,7 @@ export const VactorPlace = styled.div`
   height: 1080px;
   left: 994px;
   top: 0px;
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1900px) and (max-width: 1930px) and (max-height: 900px) {
     display: none;
   }
 `;
@@ -195,7 +195,7 @@ export const Panoramainfo = styled.div`
   font-size: 24px;
   line-height: 42px;
   color: #b879c0;
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1900px) {
     top: 304px;
     font-size: 20px;
   }
@@ -205,7 +205,7 @@ export const GsmPlace = styled.div`
   position: absolute;
   left: 156px;
   top: 676px;
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1900px) {
     left: 156px;
     top: 576px;
   }
@@ -218,7 +218,7 @@ export const PanoramainfoText = styled.span`
   font-size: 20px;
   line-height: 28px;
   color: #ff93b2;
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1900px) {
     left: 900px;
     top: 510px;
     font-size: 18px;
@@ -270,7 +270,7 @@ export const EllipsePlace = styled.div`
   position: absolute;
   left: 1100px;
   top: 330px;
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1900px) {
     position: absolute;
     left: 1000px;
     top: 130px;
@@ -279,9 +279,33 @@ export const EllipsePlace = styled.div`
 
 export const ThirdPage = styled.div`
   width: 100vw;
-  min-width: 1920px;
   height: 3459px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(${ProjectPageBackground});
+`;
+
+export const ProjectText = styled.div`
+  height: 100px;
+  margin: 0 auto;
+  padding: 106px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    font-family: "Dela Gothic One", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 58px;
+    color: #ffffff;
+  }
+`;
+
+export const Line = styled.div`
+  width: 200px;
+  height: 0px;
+  outline: 7px solid #fad7ff;
+  outline-offset: -6px;
 `;
