@@ -3,15 +3,13 @@ import styled from "@emotion/styled";
 export const FooterContainer = styled.div`
   width: 100vw;
   max-width: 1920px;
-  height: 248px;
+  height: 288px;
 `;
 
 export const FooterContent = styled.div`
   width: 500px;
   height: 100%;
   margin: 0 auto;
-  padding-top: 75px;
-  padding-bottom: 53px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -75,6 +75,7 @@ const Home = (props: Props) => {
           </S.EllipsePlace>
         </S.SecondPageContainer>
       </S.SecondPage>
+      <S.ThirdPage></S.ThirdPage>
       <Footer />
     </>
   );

@@ -1,9 +1,12 @@
 import styled from "@emotion/styled";
-import { Background, Panorama2 } from "../../Assets/index";
+import {
+  Background,
+  Panorama2,
+  ProjectPageBackground,
+} from "../../Assets/index";
 
 export const FirstPage = styled.div`
   width: 100vw;
-  min-width: 1920px;
   height: 100vh;
   min-width: 935px;
   background-image: url(${Background});
@@ -174,7 +177,7 @@ export const VactorPlace = styled.div`
   position: absolute;
   width: 1069px;
   height: 1080px;
-  left: 851px;
+  left: 994px;
   top: 0px;
   @media screen and (max-width: 1600px) {
     display: none;
@@ -186,7 +189,7 @@ export const Panoramainfo = styled.div`
   width: 861px;
   height: 42px;
   left: 196px;
-  top: 504px;
+  top: 454px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -201,7 +204,7 @@ export const Panoramainfo = styled.div`
 export const GsmPlace = styled.div`
   position: absolute;
   left: 156px;
-  top: 776px;
+  top: 676px;
   @media screen and (max-width: 1600px) {
     left: 156px;
     top: 576px;
@@ -211,7 +214,7 @@ export const GsmPlace = styled.div`
 export const PanoramainfoText = styled.span`
   position: absolute;
   left: 154px;
-  top: 854px;
+  top: 754px;
   font-size: 20px;
   line-height: 28px;
   color: #ff93b2;
@@ -264,11 +267,21 @@ export const Ellipse = styled.div`
 `;
 
 export const EllipsePlace = styled.div`
-  display: none;
+  position: absolute;
+  left: 1100px;
+  top: 330px;
   @media screen and (max-width: 1600px) {
-    display: inline;
     position: absolute;
     left: 1000px;
     top: 130px;
   }
+`;
+
+export const ThirdPage = styled.div`
+  width: 100vw;
+  min-width: 1920px;
+  height: 3459px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(${ProjectPageBackground});
 `;
