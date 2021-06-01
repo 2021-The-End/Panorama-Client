@@ -198,6 +198,10 @@ export const Panoramainfo = styled.div`
   @media screen and (max-width: 1900px) {
     top: 304px;
     font-size: 20px;
+    @media screen and (max-height: 936px) {
+      top: 404px;
+      font-size: 20px;
+    }
   }
 `;
 
@@ -222,6 +226,11 @@ export const PanoramainfoText = styled.span`
     left: 900px;
     top: 510px;
     font-size: 18px;
+    @media screen and (max-height: 936px) {
+      top: 660px;
+      left: 1000px;
+      font-size: 20px;
+    }
   }
 `;
 
