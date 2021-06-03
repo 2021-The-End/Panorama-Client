@@ -130,7 +130,7 @@ export const SecondPage = styled.div`
   width: 100vw;
   min-width: 1920px;
   height: 100vh;
-  min-width: 935px;
+  min-height: 935px;
 `;
 
 export const SecondPageContainer = styled.div`
@@ -160,7 +160,7 @@ export const BigLogo = styled.div`
   background-size: cover;
   animation-name: side;
   animation-duration: 2s;
-  @-webkit-keyframes side {
+  @keyframes side {
     0% {
       width: 0px;
     }
@@ -207,25 +207,15 @@ export const GsmPlace = styled.div`
 export const PanoramainfoText = styled.span`
   position: absolute;
   left: 154px;
-  top: 754px;
+  top: 654px;
   font-size: 20px;
   line-height: 28px;
   color: #ff93b2;
-  @media screen and (max-width: 1900px) {
-    left: 900px;
-    top: 510px;
-    font-size: 18px;
-    @media screen and (max-height: 936px) {
-      top: 660px;
-      left: 1000px;
-      font-size: 20px;
-    }
-  }
 `;
 
 export const Ellipse = styled.div`
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
   box-shadow: 0 0 20px #fff, -20px 0 80px #f0f, 20px 0 80px #0ff,
     inset 0 0 50px #fff, inset 50px 0 80px #f0f, inset -50px 0 80px #0ff,
@@ -245,11 +235,6 @@ export const Ellipse = styled.div`
     .text {
       transition: 0.5s all;
       opacity: 1;
-      text-align: center;
-      line-height: 42px;
-      font-size: 24px;
-      color: #ffffff;
-      font-family: "PT Serif";
     }
   }
   .text {
@@ -257,8 +242,8 @@ export const Ellipse = styled.div`
     color: #ffffff;
     opacity: 0;
     text-align: center;
-    line-height: 42px;
-    font-size: 24px;
+    line-height: 84px;
+    font-size: 48px;
     color: #ffffff;
     font-family: "PT Serif";
   }
@@ -266,12 +251,11 @@ export const Ellipse = styled.div`
 
 export const EllipsePlace = styled.div`
   position: absolute;
-  left: 1100px;
-  top: 330px;
+  left: 1200px;
+  top: 230px;
   @media screen and (max-width: 1900px) {
     position: absolute;
-    left: 1000px;
-    top: 130px;
+    left: 1100px;
   }
 `;
 
