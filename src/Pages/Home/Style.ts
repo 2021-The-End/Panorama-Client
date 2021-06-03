@@ -173,17 +173,6 @@ export const BigLogo = styled.div`
   }
 `;
 
-export const VactorPlace = styled.div`
-  position: absolute;
-  width: 1069px;
-  height: 1080px;
-  left: 994px;
-  top: 0px;
-  @media screen and (max-width: 1900px) and (max-width: 1930px) and (max-height: 900px) {
-    display: none;
-  }
-`;
-
 export const Panoramainfo = styled.div`
   position: absolute;
   width: 861px;

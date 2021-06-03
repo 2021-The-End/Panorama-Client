@@ -5,7 +5,6 @@ import {
   DisplayDate,
   DisplayYear,
   DisplayDate2,
-  VectorGradation,
   GSMGraduationExhibition,
 } from "../../Assets/index";
 import * as S from "./Style";
@@ -44,9 +43,6 @@ const Home = (props: Props) => {
           <S.Panoramainfo>
             {`{ PANORAMA : 전경, 풍경등을 연속적으로 보여주는 장치, 연속적인 광경 }`}
           </S.Panoramainfo>
-          <S.VactorPlace>
-            <VectorGradation />
-          </S.VactorPlace>
           <S.GsmPlace>
             <GSMGraduationExhibition />
           </S.GsmPlace>
