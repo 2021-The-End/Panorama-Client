@@ -1,9 +1,10 @@
 import { css } from "@emotion/react";
 
 const GlobalStyle = css`
-  @import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+  @font-face {
+    font-family: "AppleSDGothicNeo";
+    src: url("./fonts/AppleSDGothicNeoM.ttf") format("ttf");
+  }
   html,
   body,
   div,
@@ -91,7 +92,7 @@ const GlobalStyle = css`
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "AppleSDGothicNeo";
   }
   article,
   aside,
@@ -105,21 +106,21 @@ const GlobalStyle = css`
   nav,
   section {
     display: block;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "AppleSDGothicNeo";
   }
   body {
     line-height: 1;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "AppleSDGothicNeo";
   }
   ol,
   ul {
     list-style: none;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "AppleSDGothicNeo";
   }
   blockquote,
   q {
     quotes: none;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "AppleSDGothicNeo";
   }
   blockquote:before,
   blockquote:after,
@@ -127,12 +128,12 @@ const GlobalStyle = css`
   q:after {
     content: "";
     content: none;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "AppleSDGothicNeo";
   }
   table {
     border-collapse: collapse;
     border-spacing: 0;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "AppleSDGothicNeo";
   }
   body {
     overflow-x: hidden;

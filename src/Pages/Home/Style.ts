@@ -48,12 +48,11 @@ export const UnderlinedTextBox = styled.div`
 
 export const BigCoverText = styled.div`
   position: absolute;
-  height: 375px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   left: 736px;
-  top: 298px;
+  top: 448px;
   font-style: normal;
   font-weight: normal;
   animation-name: big;
@@ -61,11 +60,10 @@ export const BigCoverText = styled.div`
   animation-duration: leaner;
   @media screen and (max-width: 1600px) {
     left: 680px;
-    top: 298px;
-    height: 280px;
+    top: 448px;
     animation-name: big2;
   }
-  @-webkit-keyframes big2 {
+  @keyframes big2 {
     0% {
       top: 398px;
       opacity: 0;
@@ -75,7 +73,7 @@ export const BigCoverText = styled.div`
       opacity: 1;
     }
   }
-  @-webkit-keyframes big {
+  @keyframes big {
     0% {
       top: 398px;
       opacity: 0;
@@ -104,7 +102,7 @@ export const SmallCoverText = styled.div`
     top: 632px;
     animation-name: small2;
   }
-  @-webkit-keyframes small2 {
+  @keyframes small2 {
     0% {
       top: 722px;
       opacity: 0;
@@ -114,7 +112,7 @@ export const SmallCoverText = styled.div`
       opacity: 1;
     }
   }
-  @-webkit-keyframes small {
+  @keyframes small {
     0% {
       top: 842px;
       opacity: 0;
