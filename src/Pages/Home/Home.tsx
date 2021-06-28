@@ -10,7 +10,7 @@ const Home = (props: Props) => {
   return (
     <>
       <S.FirstPage>
-        <Header />
+        <Header background="clear" />
         <S.UnderlinedTextBox>
           <br /> 광주소프트웨어
           <br /> 마이스터고등학교

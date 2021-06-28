@@ -1,6 +1,16 @@
 import styled from "@emotion/styled";
 
-export const HeaderContainer = styled.div`
+type Props = {
+  background: string;
+};
+
+export const HeaderContainer = styled.div<Props>`
+  width: 100vw;
+  background-color: ${(props) => (props.background ? "clear" : "#ffffff")};
+  color: ${(props) => (props.background ? "#ffffff" : "#000000")};
+`;
+
+export const HeaderContent = styled.div`
   width: 800px;
   height: 49px;
   margin: 0 auto;
@@ -13,7 +23,6 @@ export const HeaderContainer = styled.div`
     align-items: flex-end;
     li {
       font-weight: normal;
-      color: white;
       padding: 0 35px;
     }
   }
