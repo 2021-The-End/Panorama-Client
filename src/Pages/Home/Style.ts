@@ -61,25 +61,14 @@ export const BigCoverText = styled.div`
   @media screen and (max-width: 1600px) {
     left: 680px;
     top: 448px;
-    animation-name: big2;
-  }
-  @keyframes big2 {
-    0% {
-      top: 398px;
-      opacity: 0;
-    }
-    100% {
-      top: 298px;
-      opacity: 1;
-    }
   }
   @keyframes big {
     0% {
-      top: 398px;
+      top: 598px;
       opacity: 0;
     }
     100% {
-      top: 298px;
+      top: 448px;
       opacity: 1;
     }
   }
