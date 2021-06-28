@@ -25,6 +25,7 @@ export const HeaderContent = styled.div`
     li {
       font-weight: normal;
       padding: 0 35px;
+      cursor: pointer;
     }
   }
 `;
