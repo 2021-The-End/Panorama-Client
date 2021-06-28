@@ -130,6 +130,7 @@ const GlobalStyle = css`
     font: inherit;
     vertical-align: baseline;
     font-family: "SF Pro KR";
+    text-decoration: none;
   }
   article,
   aside,

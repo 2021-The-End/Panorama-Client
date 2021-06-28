@@ -1,13 +1,14 @@
 import styled from "@emotion/styled";
 
 type Props = {
-  background: string;
+  attribute: string;
 };
 
 export const HeaderContainer = styled.div<Props>`
   width: 100vw;
-  background-color: ${(props) => (props.background ? "clear" : "#ffffff")};
-  color: ${(props) => (props.background ? "#ffffff" : "#000000")};
+  background-color: ${(props) =>
+    props.attribute === "clear" ? "clear" : "#ffffff"};
+  color: ${(props) => (props.attribute === "clear" ? "#ffffff" : "#F0D7F3")};
 `;
 
 export const HeaderContent = styled.div`

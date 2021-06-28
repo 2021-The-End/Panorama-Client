@@ -1,40 +1,55 @@
 import React from "react";
 import { PANORAMA } from "../../Assets";
 import * as S from "./Style";
-import { Link } from "react-scroll";
+import * as Scroll from "react-scroll";
+import { Link } from "react-router-dom";
 
 interface Props {
-  background: string;
+  attribute: string;
 }
 
-const header = (props: Props) => {
-  const { background } = props;
+const Header = (props: Props) => {
+  const { attribute } = props;
   return (
-    <S.HeaderContainer background={background}>
+    <S.HeaderContainer attribute={attribute}>
       <S.HeaderContent>
         <ul>
-          <li>
-            <Link
-              activeClass="active"
-              to="panorama_info"
-              spy={true}
-              smooth={true}
-              duration={600}
-            >
-              전시소개
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
-              to="introduction_project"
-              spy={true}
-              smooth={true}
-              duration={600}
-            >
-              작품소개
-            </Link>
-          </li>
+          {attribute === "clear" ? (
+            <>
+              <li>
+                <Scroll.Link
+                  activeClass="active"
+                  to="panorama_info"
+                  spy={true}
+                  smooth={true}
+                  duration={600}
+                >
+                  전시소개
+                </Scroll.Link>
+              </li>
+              <li>
+                <Scroll.Link
+                  activeClass="active"
+                  to="introduction_project"
+                  spy={true}
+                  smooth={true}
+                  duration={600}
+                >
+                  작품소개
+                </Scroll.Link>
+              </li>
+            </>
+          ) : (
+            <>
+              <li>
+                <Link to="/">전시소개</Link>
+              </li>
+              <li>
+                <Link to="/">작품소개</Link>
+              </li>
+            </>
+          )}
+
           <PANORAMA />
           <li>졸업생소개</li>
           <li>방명록</li>
@@ -44,4 +59,4 @@ const header = (props: Props) => {
   );
 };
 
-export default header;
+export default Header;
