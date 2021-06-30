@@ -4,7 +4,7 @@ import * as S from "./Style";
 
 interface Props {}
 
-const footer = (props: Props) => {
+const Footer = (props: Props) => {
   return (
     <S.FooterContainer>
       <S.FooterContent>
@@ -20,4 +20,4 @@ const footer = (props: Props) => {
   );
 };
 
-export default footer;
+export default Footer;
