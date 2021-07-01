@@ -8,7 +8,10 @@ export const HeaderContainer = styled.div<Props>`
   width: 100vw;
   background-color: ${(props) =>
     props.attribute === "clear" ? "clear" : "#ffffff"};
-  color: ${(props) => (props.attribute === "clear" ? "#ffffff" : "#F0D7F3")};
+  li,
+  a {
+    color: ${(props) => (props.attribute === "clear" ? "#ffffff" : "#F0D7F3")};
+  }
 `;
 
 export const HeaderContent = styled.div`
