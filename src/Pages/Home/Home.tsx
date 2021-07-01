@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Header } from "../../Components";
+import { Footer, Header, Project } from "../../Components";
 import { THE_END, GSMExhibition } from "../../Assets/index";
 import * as S from "./Style";
 import { Element } from "react-scroll";
@@ -63,6 +63,14 @@ const Home = (props: Props) => {
             <span>PROJECT</span>
             <S.Line />
           </S.ProjectText>
+          <S.ProjectContainer>
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+          </S.ProjectContainer>
         </S.ThirdPage>
       </Element>
       <Footer />

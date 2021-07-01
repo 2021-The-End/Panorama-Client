@@ -278,3 +278,13 @@ export const Line = styled.div`
   outline: 7px solid #fad7ff;
   outline-offset: -6px;
 `;
+
+export const ProjectContainer = styled.div`
+  width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 318px;
+  column-gap: 20px;
+  row-gap: 15px;
+`;
