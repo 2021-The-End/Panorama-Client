@@ -40,10 +40,12 @@ export const UnderlinedTextBox = styled.div`
   position: absolute;
   left: 131px;
   top: 190px;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 30px;
   line-height: 42px;
   color: white;
+  text-decoration: underline;
+  text-underline-position: under;
 `;
 
 export const BigCoverText = styled.div`
@@ -277,4 +279,27 @@ export const Line = styled.div`
   height: 0px;
   outline: 7px solid #fad7ff;
   outline-offset: -6px;
+`;
+
+export const ProjectContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+interface Props {
+  CoverListlength: number;
+}
+
+export const ProjectContent = styled.div<Props>`
+  width: 1330px;
+  display: grid;
+  grid-template-columns: repeat(3, 430px);
+  grid-template-rows: repeat(
+    ${(props) => Math.ceil(props.CoverListlength / 3)},
+    318px
+  );
+  column-gap: 20px;
+  row-gap: 15px;
 `;
