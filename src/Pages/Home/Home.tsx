@@ -26,7 +26,7 @@ const Home = (props: Props) => {
         <S.UnderlinedTextBox>
           <br /> 광주소프트웨어
           <br /> 마이스터고등학교
-          <br /> 전시회
+          <br /> 전시회 <span className="blink">|</span>
         </S.UnderlinedTextBox>
         <S.AuthContainer>
           <S.PanoramaBtn>로그인</S.PanoramaBtn>

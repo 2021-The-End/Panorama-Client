@@ -60,6 +60,14 @@ export const UnderlinedTextBox = styled.div`
   color: white;
   text-decoration: underline;
   text-underline-position: under;
+  @keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+  }
+  .blink {
+    animation: blink-effect 1s step-end infinite;
+  }
 `;
 
 export const AuthContainer = styled.div`
