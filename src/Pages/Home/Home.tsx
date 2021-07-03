@@ -3,10 +3,23 @@ import { Footer, Header, Project } from "../../Components";
 import { THE_END, GSMExhibition } from "../../Assets/index";
 import * as S from "./Style";
 import { Element } from "react-scroll";
+import { ProjectCoverList } from "../../Assets/dummy/data";
 
 interface Props {}
 
 const Home = (props: Props) => {
+  const CoverList = ProjectCoverList.map((data) => {
+    return (
+      <Project
+        postid={data.postid}
+        title={data.title}
+        creator={data.creator}
+        grade={data.grade}
+        imgpaths={data.imgpaths}
+      />
+    );
+  });
+  console.log("CoverList :>> ", CoverList);
   return (
     <>
       <S.FirstPage>
@@ -64,12 +77,9 @@ const Home = (props: Props) => {
             <S.Line />
           </S.ProjectText>
           <S.ProjectContainer>
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-            <Project />
+            <S.ProjectContent CoverListlength={CoverList.length}>
+              {CoverList}
+            </S.ProjectContent>
           </S.ProjectContainer>
         </S.ThirdPage>
       </Element>

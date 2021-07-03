@@ -280,11 +280,24 @@ export const Line = styled.div`
 `;
 
 export const ProjectContainer = styled.div`
-  width: 1400px;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+interface Props {
+  CoverListlength: number;
+}
+
+export const ProjectContent = styled.div<Props>`
+  width: 1330px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 318px;
+  grid-template-columns: repeat(3, 430px);
+  grid-template-rows: repeat(
+    ${(props) => Math.ceil(props.CoverListlength / 3)},
+    318px
+  );
   column-gap: 20px;
   row-gap: 15px;
 `;

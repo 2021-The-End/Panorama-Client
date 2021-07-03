@@ -8,3 +8,4 @@ export { default as THE_END } from "./img/THE_END.png";
 export { default as TopBack } from "./img/GraduateTop.png";
 export { default as Panorama2 } from "./img/Panorama2.png";
 export { default as ProjectPageBackground } from "./img/ProjectPageBackground.png";
+export { default as GoOut } from "./img/GoOut.png";
