@@ -1,46 +1,7 @@
 import { css } from "@emotion/react";
 
 const GlobalStyle = css`
-  @font-face {
-    font-family: "SF Pro KR";
-    font-style: normal;
-    font-weight: 300;
-    src: local("â˜º"),
-      url("https://www.apple.com/wss/fonts/SF-Pro-KR/v2/SFProKRDisplay_light.woff2")
-        format("woff2");
-    /* (C) 2018 Apple Inc. All rights reserved. */
-  }
-
-  @font-face {
-    font-family: "SF Pro KR";
-    font-style: normal;
-    font-weight: 400;
-    src: url("/wss/fonts/SF-Pro-KR/v2/SFProKRDisplay_regular.eot");
-    src: local("â˜º"),
-      url("https://www.apple.com/wss/fonts/SF-Pro-KR/v2/SFProKRDisplay_regular.woff2")
-        format("woff2");
-    /* (C) 2018 Apple Inc. All rights reserved. */
-  }
-
-  @font-face {
-    font-family: "SF Pro KR";
-    font-style: normal;
-    font-weight: 600;
-    src: local("â˜º"),
-      url("https://www.apple.com/wss/fonts/SF-Pro-KR/v2/SFProKRDisplay_semibold.woff2")
-        format("woff2");
-    /* (C) 2018 Apple Inc. All rights reserved. */
-  }
-
-  @font-face {
-    font-family: "SF Pro KR";
-    font-style: normal;
-    font-weight: 700;
-    src: local("â˜º"),
-      url("https://www.apple.com/wss/fonts/SF-Pro-KR/v2/SFProKRDisplay_bold.woff2")
-        format("woff2");
-    /* (C) 2018 Apple Inc. All rights reserved. */
-  }
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700&display=swap");
 
   html,
   body,
@@ -129,7 +90,7 @@ const GlobalStyle = css`
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    font-family: "SF Pro KR";
+    font-family: "Noto Sans KR", sans-serif;
     text-decoration: none;
   }
   article,
@@ -144,21 +105,21 @@ const GlobalStyle = css`
   nav,
   section {
     display: block;
-    font-family: "SF Pro KR";
+    font-family: "Noto Sans KR", sans-serif;
   }
   body {
     line-height: 1;
-    font-family: "SF Pro KR";
+    font-family: "Noto Sans KR", sans-serif;
   }
   ol,
   ul {
     list-style: none;
-    font-family: "SF Pro KR";
+    font-family: "Noto Sans KR", sans-serif;
   }
   blockquote,
   q {
     quotes: none;
-    font-family: "SF Pro KR";
+    font-family: "Noto Sans KR", sans-serif;
   }
   blockquote:before,
   blockquote:after,
@@ -166,12 +127,12 @@ const GlobalStyle = css`
   q:after {
     content: "";
     content: none;
-    font-family: "SF Pro KR";
+    font-family: "Noto Sans KR", sans-serif;
   }
   table {
     border-collapse: collapse;
     border-spacing: 0;
-    font-family: "SF Pro KR";
+    font-family: "Noto Sans KR", sans-serif;
   }
   body {
     overflow-x: hidden;

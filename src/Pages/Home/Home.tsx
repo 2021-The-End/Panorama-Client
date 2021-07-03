@@ -19,7 +19,6 @@ const Home = (props: Props) => {
       />
     );
   });
-  console.log("CoverList :>> ", CoverList);
   return (
     <>
       <S.FirstPage>
@@ -29,6 +28,10 @@ const Home = (props: Props) => {
           <br /> 마이스터고등학교
           <br /> 전시회
         </S.UnderlinedTextBox>
+        <S.AuthContainer>
+          <S.PanoramaBtn>로그인</S.PanoramaBtn>
+          <S.PanoramaBtn>회원가입</S.PanoramaBtn>
+        </S.AuthContainer>
         <S.TheEndText>
           <img src={THE_END} alt="The End"></img>
         </S.TheEndText>

@@ -62,6 +62,36 @@ export const UnderlinedTextBox = styled.div`
   text-underline-position: under;
 `;
 
+export const AuthContainer = styled.div`
+  position: absolute;
+  height: 120px;
+  width: 220px;
+  left: 131px;
+  top: 390px;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const PanoramaBtn = styled.div`
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s all;
+  &:not(:last-child) {
+    width: 45px;
+  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transition: 0.5s all;
+  }
+`;
+
 export const SecondPage = styled.div`
   width: 100vw;
   min-width: 1920px;
