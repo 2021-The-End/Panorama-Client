@@ -29,11 +29,9 @@ const Home = (props: Props) => {
           <br /> 마이스터고등학교
           <br /> 전시회
         </S.UnderlinedTextBox>
-        <S.BigCoverText>
-          <S.TheEndText>
-            <img src={THE_END} alt="The End"></img>
-          </S.TheEndText>
-        </S.BigCoverText>
+        <S.TheEndText>
+          <img src={THE_END} alt="The End"></img>
+        </S.TheEndText>
       </S.FirstPage>
       <Element name="panorama_info">
         <S.SecondPage>

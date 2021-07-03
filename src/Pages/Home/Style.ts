@@ -14,41 +14,7 @@ export const FirstPage = styled.div`
   background-size: cover;
 `;
 
-export const DisplayYearText = styled.div`
-  img {
-    width: 500px;
-    height: 120px;
-    @media screen and (max-width: 1600px) {
-      width: 350px;
-      height: 84px;
-    }
-  }
-`;
-
 export const TheEndText = styled.div`
-  img {
-    width: 1250px;
-    height: 180px;
-    @media screen and (max-width: 1600px) {
-      width: 904px;
-      height: 150px;
-    }
-  }
-`;
-
-export const UnderlinedTextBox = styled.div`
-  position: absolute;
-  left: 131px;
-  top: 190px;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 42px;
-  color: white;
-  text-decoration: underline;
-  text-underline-position: under;
-`;
-
-export const BigCoverText = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -74,45 +40,26 @@ export const BigCoverText = styled.div`
       opacity: 1;
     }
   }
+  img {
+    width: 1250px;
+    height: 180px;
+    @media screen and (max-width: 1600px) {
+      width: 904px;
+      height: 150px;
+    }
+  }
 `;
 
-export const SmallCoverText = styled.div`
+export const UnderlinedTextBox = styled.div`
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  left: 1462px;
-  top: 772px;
-  font-style: normal;
-  font-weight: normal;
-  animation-name: small;
-  animation-duration: 4s;
-  animation-duration: leaner;
-  @media screen and (max-width: 1600px) {
-    left: 1062px;
-    top: 632px;
-    animation-name: small2;
-  }
-  @keyframes small2 {
-    0% {
-      top: 722px;
-      opacity: 0;
-    }
-    100% {
-      top: 632px;
-      opacity: 1;
-    }
-  }
-  @keyframes small {
-    0% {
-      top: 842px;
-      opacity: 0;
-    }
-    100% {
-      top: 772px;
-      opacity: 1;
-    }
-  }
+  left: 131px;
+  top: 190px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  color: white;
+  text-decoration: underline;
+  text-underline-position: under;
 `;
 
 export const SecondPage = styled.div`
@@ -126,16 +73,6 @@ export const SecondPageContainer = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-`;
-
-export const SecondDate = styled.div`
-  position: absolute;
-  left: 156px;
-  top: 123px;
-  @media screen and (max-width: 1900px) {
-    left: 111px;
-    top: 100px;
-  }
 `;
 
 export const BigLogo = styled.div`
