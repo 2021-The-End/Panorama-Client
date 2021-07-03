@@ -40,10 +40,12 @@ export const UnderlinedTextBox = styled.div`
   position: absolute;
   left: 131px;
   top: 190px;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 30px;
   line-height: 42px;
   color: white;
+  text-decoration: underline;
+  text-underline-position: under;
 `;
 
 export const BigCoverText = styled.div`
