@@ -4,6 +4,7 @@ import { THE_END, GSMExhibition } from "../../Assets/index";
 import * as S from "./Style";
 import { Element } from "react-scroll";
 import { ProjectCoverList } from "../../Assets/dummy/data";
+import { Link } from "react-router-dom";
 
 interface Props {}
 
@@ -29,8 +30,16 @@ const Home = (props: Props) => {
           <br /> 전시회
         </S.UnderlinedTextBox>
         <S.AuthContainer>
-          <S.PanoramaBtn>로그인</S.PanoramaBtn>
-          <S.PanoramaBtn>회원가입</S.PanoramaBtn>
+          <Link to="/Login">
+            <S.PanoramaBtn>
+              <div>로그인</div>
+            </S.PanoramaBtn>
+          </Link>
+          <Link to="/Register">
+            <S.PanoramaBtn>
+              <div>회원가입</div>
+            </S.PanoramaBtn>
+          </Link>
         </S.AuthContainer>
         <S.TheEndText>
           <img src={THE_END} alt="The End"></img>

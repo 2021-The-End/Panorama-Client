@@ -64,12 +64,14 @@ export const UnderlinedTextBox = styled.div`
 
 export const AuthContainer = styled.div`
   position: absolute;
-  height: 120px;
   width: 220px;
   left: 131px;
   top: 390px;
   display: flex;
   justify-content: space-between;
+  a {
+    color: #000000;
+  }
 `;
 
 export const PanoramaBtn = styled.div`
@@ -83,12 +85,27 @@ export const PanoramaBtn = styled.div`
   align-items: center;
   cursor: pointer;
   transition: 0.5s all;
+  position: relative;
   &:not(:last-child) {
     width: 45px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    bottom: 10px;
+    transition: 0.5s;
+    transform: translateX(-50%);
   }
   &:hover {
     background: rgba(255, 255, 255, 0.8);
     transition: 0.5s all;
+    &:before {
+      width: 60%;
+    }
   }
 `;
 

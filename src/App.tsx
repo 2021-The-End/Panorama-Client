@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Global } from "@emotion/react";
 import GlobalStyle from "./Styles/GlobalStyle";
-import { Graduates, Home } from "./Pages";
+import { Graduates, Home, Login, Register } from "./Pages";
 
 interface Props {}
 
@@ -14,6 +14,8 @@ const App = (props: Props) => {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/Graduates" exact component={Graduates} />
+          <Route path="/Login" exact component={Login} />
+          <Route path="/Register" exact component={Register} />
         </Switch>
       </BrowserRouter>
     </>
