@@ -51,7 +51,9 @@ const Header = (props: Props) => {
           )}
 
           <PANORAMA />
-          <li>졸업생소개</li>
+          <li>
+            <Link to="/Graduates">졸업생소개</Link>
+          </li>
           <li>방명록</li>
         </ul>
       </S.HeaderContent>
