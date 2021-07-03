@@ -7,10 +7,11 @@ type Props = {
 export const HeaderContainer = styled.div<Props>`
   width: 100vw;
   background-color: ${(props) =>
-    props.attribute === "clear" ? "clear" : "#ffffff"};
+    props.attribute === "clear" || "auth" ? "clear" : "#ffffff"};
   li,
   a {
-    color: ${(props) => (props.attribute === "clear" ? "#ffffff" : "#F0D7F3")};
+    color: ${(props) =>
+      props.attribute === "unclear" && "auth" ? "#F0D7F3" : "#ffffff"};
   }
 `;
 
