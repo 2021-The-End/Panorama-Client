@@ -62,6 +62,24 @@ export const UnderlinedTextBox = styled.div`
   text-underline-position: under;
 `;
 
+export const userContainer = styled.div`
+  position: absolute;
+  height: 80px;
+  left: 131px;
+  top: 390px;
+  color: #ffffff;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  a {
+    color: #000000;
+    div {
+      width: 92px;
+    }
+  }
+`;
+
 export const AuthContainer = styled.div`
   position: absolute;
   width: 220px;

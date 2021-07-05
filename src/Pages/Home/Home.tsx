@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Footer, Header, Project } from "../../Components";
 import { THE_END, GSMExhibition } from "../../Assets/index";
 import * as S from "./Style";
@@ -9,6 +9,8 @@ import { Link } from "react-router-dom";
 interface Props {}
 
 const Home = (props: Props) => {
+  const [authority, setAuthority] = useState(true);
+  const [userName, setUserName] = useState("유영재");
   const CoverList = ProjectCoverList.map((data) => {
     return (
       <Project
@@ -29,18 +31,27 @@ const Home = (props: Props) => {
           <br /> 마이스터고등학교
           <br /> 전시회
         </S.UnderlinedTextBox>
-        <S.AuthContainer>
-          <Link to="/Login">
+        {authority ? (
+          <S.userContainer>
+            어서 오세요 {userName}님 즐거운 관람 되세요!
             <S.PanoramaBtn>
-              <div>로그인</div>
+              <div>작품 전시하기</div>
             </S.PanoramaBtn>
-          </Link>
-          <Link to="/Register">
-            <S.PanoramaBtn>
-              <div>회원가입</div>
-            </S.PanoramaBtn>
-          </Link>
-        </S.AuthContainer>
+          </S.userContainer>
+        ) : (
+          <S.AuthContainer>
+            <Link to="/Login">
+              <S.PanoramaBtn>
+                <div>로그인</div>
+              </S.PanoramaBtn>
+            </Link>
+            <Link to="/Register">
+              <S.PanoramaBtn>
+                <div>회원가입</div>
+              </S.PanoramaBtn>
+            </Link>
+          </S.AuthContainer>
+        )}
         <S.TheEndText>
           <img src={THE_END} alt="The End"></img>
         </S.TheEndText>
