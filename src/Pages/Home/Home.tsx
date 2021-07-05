@@ -34,9 +34,11 @@ const Home = (props: Props) => {
         {authority ? (
           <S.userContainer>
             어서 오세요 {userName}님 즐거운 관람 되세요!
-            <S.PanoramaBtn>
-              <div>작품 전시하기</div>
-            </S.PanoramaBtn>
+            <Link to="/Upload">
+              <S.PanoramaBtn>
+                <div>작품 전시하기</div>
+              </S.PanoramaBtn>
+            </Link>
           </S.userContainer>
         ) : (
           <S.AuthContainer>

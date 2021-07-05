@@ -64,9 +64,9 @@ export const UnderlinedTextBox = styled.div`
 
 export const userContainer = styled.div`
   position: absolute;
-  height: 80px;
+  height: 85px;
   left: 131px;
-  top: 390px;
+  top: 400px;
   color: #ffffff;
   font-size: 20px;
   display: flex;
