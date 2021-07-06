@@ -14,6 +14,7 @@ const Home = (props: Props) => {
   const CoverList = ProjectCoverList.map((data) => {
     return (
       <Project
+        key={data.postid}
         postid={data.postid}
         title={data.title}
         creator={data.creator}
