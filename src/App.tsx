@@ -1,18 +1,25 @@
 import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Global } from "@emotion/react";
+import GlobalStyle from "./Styles/GlobalStyle";
+import { Graduates, Home, Login, Register, Upload } from "./Pages";
 
 interface Props {}
 
 const App = (props: Props) => {
   return (
-    <iframe
-      width="1278"
-      height="719"
-      src="https://www.youtube.com/embed/7UJELUi1MVI"
-      title="YouTube video player"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
+    <>
+      <Global styles={GlobalStyle} />
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/Graduates" exact component={Graduates} />
+          <Route path="/Login" exact component={Login} />
+          <Route path="/Register" exact component={Register} />
+          <Route path="/Upload" exact component={Upload} />
+        </Switch>
+      </BrowserRouter>
+    </>
   );
 };
 
