@@ -104,7 +104,7 @@ export const AuthContainer = styled.div`
 
 export const PanoramaBtn = styled.div`
   height: 50px;
-  padding: 0 20px;
+  padding: 0 25px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.5);
   border: 0;
