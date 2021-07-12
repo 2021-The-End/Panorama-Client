@@ -85,7 +85,7 @@ export const UserContainer = styled.div`
   a {
     color: #000000;
     div {
-      width: 92px;
+      width: 93px;
     }
   }
 `;
