@@ -33,14 +33,14 @@ const Home = (props: Props) => {
           <br /> 전시회 <span className="blink">|</span>
         </S.UnderlinedTextBox>
         {authority ? (
-          <S.userContainer>
+          <S.UserContainer>
             어서 오세요 {userName}님 즐거운 관람 되세요!
             <Link to="/Upload">
               <S.PanoramaBtn>
                 <div>작품 전시하기</div>
               </S.PanoramaBtn>
             </Link>
-          </S.userContainer>
+          </S.UserContainer>
         ) : (
           <S.AuthContainer>
             <Link to="/Login">

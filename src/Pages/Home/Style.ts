@@ -72,7 +72,7 @@ export const UnderlinedTextBox = styled.div`
   }
 `;
 
-export const userContainer = styled.div`
+export const UserContainer = styled.div`
   position: absolute;
   height: 85px;
   left: 131px;
