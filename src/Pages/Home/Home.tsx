@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 
 interface Props {}
 const Home = (props: Props) => {
-  const [authority, setAuthority] = useState(false);
-  const [userName, setUserName] = useState("유영재");
+  const [authority, setAuthority] = useState(true);
+  const [userName, setUserName] = useState("gsm1234");
   const CoverList = ProjectCoverList.map((data) => {
     return (
       <Project
