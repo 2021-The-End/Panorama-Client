@@ -7,7 +7,7 @@ import { ProjectCoverList } from "../../Assets/dummy/data";
 import { Link } from "react-router-dom";
 
 interface Props {}
-
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const Home = (props: Props) => {
   const [authority, setAuthority] = useState(true);
   const [userName, setUserName] = useState("유영재");
