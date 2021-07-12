@@ -20,7 +20,7 @@ export const TheEndText = styled.div`
   flex-direction: column;
   justify-content: space-between;
   left: 736px;
-  top: 448px;
+  top: 548px;
   font-style: normal;
   font-weight: normal;
   animation-name: big;
@@ -36,7 +36,9 @@ export const TheEndText = styled.div`
       opacity: 0;
     }
     100% {
-      top: 448px;
+      @media screen and (max-width: 1600px) {
+        top: 448px;
+      }
       opacity: 1;
     }
   }
@@ -60,6 +62,14 @@ export const UnderlinedTextBox = styled.div`
   color: white;
   text-decoration: underline;
   text-underline-position: under;
+  @keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+  }
+  .blink {
+    animation: blink-effect 1s step-end infinite;
+  }
 `;
 
 export const userContainer = styled.div`
@@ -188,11 +198,7 @@ export const Panoramainfo = styled.div`
 export const GsmPlace = styled.div`
   position: absolute;
   left: 156px;
-  top: 676px;
-  @media screen and (max-width: 1900px) {
-    left: 156px;
-    top: 576px;
-  }
+  top: 576px;
 `;
 
 export const PanoramainfoText = styled.span`

@@ -7,7 +7,7 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterContent = styled.div`
-  width: 500px;
+  width: 700px;
   height: 100%;
   margin: 0 auto;
   display: flex;
