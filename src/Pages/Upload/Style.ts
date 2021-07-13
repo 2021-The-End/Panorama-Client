@@ -66,8 +66,7 @@ export const Description = styled.div`
 
 export const ImgUpload = styled.div`
   display: flex;
-  width: 724px;
-  padding: 5px;
+  width: 624px;
 `;
 
 export const UploadBtn = styled.div`
@@ -106,4 +105,23 @@ export const ImgView = styled.div`
     height: 100px;
     margin-left: 10px;
   }
+`;
+
+export const SubmitBtn = styled.div`
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: gray;
+  border-radius: 8px;
+`;
+
+export const Bottom = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5px;
 `;
