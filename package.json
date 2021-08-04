@@ -48,7 +48,9 @@
     ]
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/react-router-dom": "^5.1.7",
-    "@types/react-scroll": "^1.8.2"
+    "@types/react-scroll": "^1.8.2",
+    "axios": "^0.21.1"
   }
 }

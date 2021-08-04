@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Footer, Header, Auth } from "../../Components";
+import axios from "axios";
 import * as S from "./Style";
 
 interface Props {}
@@ -9,7 +10,24 @@ const Login = (props: Props) => {
   const [pw, setPw] = useState("");
 
   const handleLogin = () => {
-    console.log("id,pw :>> ", id, pw);
+    const test = axios
+      .post(
+        "http://34.64.216.7:8080/api/v1/user/signin",
+        {
+          username: id,
+          password: pw,
+        }
+        // {
+        //   headers: {
+        //     "Content-type": "application/json",
+        //     Accept: "application/json",
+        //   },
+        // }
+      )
+      .then((response) => {
+        return response;
+      });
+    console.log("test :>> ", test);
   };
   return (
     <>
