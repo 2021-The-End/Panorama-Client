@@ -2,29 +2,26 @@ import React, { useState } from "react";
 import { Footer, Header, Auth } from "../../Components";
 import axios from "axios";
 import * as S from "./Style";
-
 interface Props {}
 
 const Login = (props: Props) => {
   const [id, setId] = useState("");
   const [pw, setPw] = useState("");
-
-  const handleLogin = () => {
-    const test = axios
+  const URL = "http://34.64.83.135:8080/api/v1/user/signin";
+  const handleLogin = async () => {
+    const test = await axios
       .post(
-        "http://34.64.216.7:8080/api/v1/user/signin",
+        URL,
         {
           username: id,
           password: pw,
+        },
+        {
+          withCredentials: true,
         }
-        // {
-        //   headers: {
-        //     "Content-type": "application/json",
-        //     Accept: "application/json",
-        //   },
-        // }
       )
       .then((response) => {
+        console.log("response :>> ", response);
         return response;
       });
     console.log("test :>> ", test);
