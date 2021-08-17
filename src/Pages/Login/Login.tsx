@@ -9,22 +9,17 @@ const Login = (props: Props) => {
   const [pw, setPw] = useState("");
   const URL = "http://34.64.83.135:8080/api/v1/user/signin";
   const handleLogin = async () => {
-    const test = await axios
-      .post(
-        URL,
-        {
-          username: id,
-          password: pw,
-        },
-        {
-          withCredentials: true,
-        }
-      )
+    const userData = {
+      username: id,
+      password: pw,
+    };
+    await axios
+      .post(URL, userData, {
+        withCredentials: true,
+      })
       .then((response) => {
         console.log("response :>> ", response);
-        return response;
       });
-    console.log("test :>> ", test);
   };
   return (
     <>
